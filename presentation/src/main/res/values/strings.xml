@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Stackoverflow</string>
+    <string name="api_base_url">https://api.stackexchange.com/</string>
+</resources>
