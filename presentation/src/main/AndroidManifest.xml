@@ -13,7 +13,7 @@
         android:roundIcon="@drawable/so_icon"
         android:supportsRtl="true"
         android:theme="@style/FullScreen">
-        <activity android:name=".questions.MainActivity">
+        <activity android:name=".questions.QuestionsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
