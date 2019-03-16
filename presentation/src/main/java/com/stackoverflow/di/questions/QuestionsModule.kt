@@ -16,7 +16,6 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Named
 
-@QuestionsScope
 @Module
 class QuestionsModule {
 

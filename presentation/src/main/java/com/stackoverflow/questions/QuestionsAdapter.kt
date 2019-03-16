@@ -38,7 +38,6 @@ class QuestionsAdapter : RecyclerView.Adapter<QuestionsAdapter.ViewHolder>() {
 
     fun clear() {
         this.questions.clear()
-        notifyDataSetChanged()
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
