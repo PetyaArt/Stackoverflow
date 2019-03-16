@@ -12,7 +12,7 @@ class CachedQuestionsDataStore(private val questionsCache: QuestionsCache): Ques
     }
 
     fun isEmpty(): Observable<Boolean> {
-        return questionsCache.inEmpty()
+        return questionsCache.isEmpty()
     }
 
     fun save(questionsEntity: List<QuestionsEntity>) {

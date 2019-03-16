@@ -3,7 +3,6 @@ package com.stackoverflow.data.mappers
 import com.stackoverflow.data.entities.OwnerData
 import com.stackoverflow.data.entities.QuestionsData
 import com.stackoverflow.domain.common.Mapper
-import com.stackoverflow.domain.entities.OwnerEntity
 import com.stackoverflow.domain.entities.QuestionsEntity
 import javax.inject.Inject
 import javax.inject.Singleton

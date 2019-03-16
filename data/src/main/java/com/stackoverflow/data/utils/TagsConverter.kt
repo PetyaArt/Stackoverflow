@@ -2,8 +2,6 @@ package com.stackoverflow.data.utils
 
 import android.arch.persistence.room.TypeConverter
 import com.google.gson.Gson
-import com.stackoverflow.data.entities.OwnerData
-import android.provider.MediaStore.Video
 import com.google.gson.reflect.TypeToken
 
 

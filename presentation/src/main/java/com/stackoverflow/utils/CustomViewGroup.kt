@@ -1,10 +1,8 @@
 package com.stackoverflow.utils
 
 import android.content.Context
-import android.graphics.Point
 import android.util.AttributeSet
 import android.view.ViewGroup
-import android.view.WindowManager
 
 class CustomViewGroup : ViewGroup {
 
@@ -25,7 +23,6 @@ class CustomViewGroup : ViewGroup {
         val childLeft = this.paddingLeft
         val childTop = this.paddingTop
         val childRight = this.measuredWidth - this.paddingRight
-        val childBottom = this.measuredHeight - this.paddingBottom
 
         maxHeight = 0
         curLeft = childLeft

@@ -1,10 +1,10 @@
 package com.stackoverflow.di.modules
 
+import android.content.Context
+import android.net.ConnectivityManager
 import com.stackoverflow.data.api.Api
 import dagger.Module
 import dagger.Provides
-import okhttp3.Interceptor
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
@@ -28,4 +28,8 @@ class NetworkModule(private val baseUrl: String) {
     fun provideApi(retrofit: Retrofit): Api {
         return retrofit.create(Api::class.java)
     }
+
+    @Singleton
+    @Provides
+    fun network(context: Context): ConnectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 }

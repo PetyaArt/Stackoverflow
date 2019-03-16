@@ -9,5 +9,5 @@ interface QuestionsCache {
     fun clear()
     fun save(questionsEntity: List<QuestionsEntity>)
     fun get(): Observable<List<QuestionsEntity>>
-    fun inEmpty(): Observable<Boolean>
+    fun isEmpty(): Observable<Boolean>
 }

@@ -6,5 +6,5 @@ import com.stackoverflow.data.entities.QuestionsData
 
 @Database(entities = [QuestionsData::class], version = 1)
 abstract class QuestionsDatabase: RoomDatabase() {
-    abstract fun getQuestionsDao():QuestionsDao
+    abstract fun getQuestionsDao(): QuestionsDao
 }

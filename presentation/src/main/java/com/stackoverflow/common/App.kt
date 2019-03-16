@@ -22,6 +22,7 @@ class App: Application() {
 
     private fun initDependencies() {
         mainComponent = DaggerMainComponent.builder()
+            .appModule(AppModule(applicationContext))
             .networkModule(NetworkModule(getString(R.string.api_base_url)))
             .dataModule(DataModule())
             .build()

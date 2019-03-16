@@ -1,4 +1,4 @@
-package com.stackoverflow
+package com.stackoverflow.mappers
 
 import com.stackoverflow.domain.common.Mapper
 import com.stackoverflow.domain.entities.QuestionsEntity

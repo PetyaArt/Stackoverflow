@@ -1,7 +1,5 @@
 package com.stackoverflow.questions
 
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Build
 import android.support.v4.content.ContextCompat
@@ -33,8 +31,13 @@ class QuestionsAdapter : RecyclerView.Adapter<QuestionsAdapter.ViewHolder>() {
         holder.bind(questions[position])
     }
 
-    fun addMovies(movies: List<Question>) {
-        this.questions.addAll(movies)
+    fun addQuestions(questions: List<Question>) {
+        this.questions.addAll(questions)
+        notifyDataSetChanged()
+    }
+
+    fun clear() {
+        this.questions.clear()
         notifyDataSetChanged()
     }
 

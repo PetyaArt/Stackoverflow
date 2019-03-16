@@ -5,7 +5,6 @@ import com.stackoverflow.di.modules.DataModule
 import com.stackoverflow.di.modules.NetworkModule
 import com.stackoverflow.di.questions.QuestionsModule
 import com.stackoverflow.di.questions.QuestionsSubComponent
-import com.stackoverflow.questions.QuestionsFragment
 import dagger.Component
 import javax.inject.Singleton
 

@@ -10,7 +10,7 @@ class QuestionsDataEntityMapper @Inject constructor() : Mapper<QuestionsData, Qu
 
     override fun mapFrom(from: QuestionsData): QuestionsEntity {
         return QuestionsEntity(
-            id = from.id,
+            id = from.questionId,
             tags = from.tags,
             owner = getOwnerEntity(from),
             is_answered = from.isAnswered,

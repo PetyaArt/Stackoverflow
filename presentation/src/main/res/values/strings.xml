@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Stackoverflow</string>
     <string name="api_base_url">https://api.stackexchange.com/</string>
+    <string name="no_internet">Нет подключения к интернету</string>
 </resources>

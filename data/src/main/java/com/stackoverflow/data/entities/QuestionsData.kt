@@ -1,6 +1,9 @@
 package com.stackoverflow.data.entities
 
-import android.arch.persistence.room.*
+import android.arch.persistence.room.Embedded
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
+import android.arch.persistence.room.TypeConverters
 import com.google.gson.annotations.SerializedName
 import com.stackoverflow.data.utils.TagsConverter
 
@@ -9,8 +12,8 @@ import com.stackoverflow.data.utils.TagsConverter
 data class QuestionsData(
 
     @SerializedName("id")
-    @PrimaryKey
-    var id: Int = -1,
+    @PrimaryKey(autoGenerate = true)
+    var id: Int,
 
     @SerializedName("accepted_answer_id")
     val acceptedAnswerId: Int,

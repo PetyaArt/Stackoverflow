@@ -20,7 +20,7 @@ class RoomQuestionsCache(database: QuestionsDatabase,
         return Observable.fromCallable { dao.getQuestions().map { dataToEntityMapper.mapFrom(it) }}
     }
 
-    override fun inEmpty(): Observable<Boolean> {
+    override fun isEmpty(): Observable<Boolean> {
         return Observable.fromCallable { dao.getQuestions().isEmpty() }
     }
 

@@ -1,7 +1,6 @@
 package com.stackoverflow.data.repositories
 
 import com.stackoverflow.data.api.Api
-import com.stackoverflow.data.db.QuestionsDatabase
 import com.stackoverflow.data.mappers.QuestionsDataEntityMapper
 import com.stackoverflow.domain.QuestionsDataStore
 import com.stackoverflow.domain.entities.QuestionsEntity
